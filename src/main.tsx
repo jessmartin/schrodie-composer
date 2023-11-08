@@ -5,6 +5,7 @@ import { createRoot } from "react-dom/client";
 
 import { ClientPlugin } from "@braneframe/plugin-client";
 import { ErrorPlugin } from "@braneframe/plugin-error";
+import { FilesPlugin } from "@braneframe/plugin-files";
 import { GraphPlugin } from "@braneframe/plugin-graph";
 import { IpfsPlugin } from "@braneframe/plugin-ipfs";
 import { LayoutPlugin } from "@braneframe/plugin-layout";
@@ -32,20 +33,24 @@ import { types } from "@braneframe/types";
 const App = createApp({
   plugins: [
     ThemePlugin({ appName: "Schrodie" }),
-    // Inside theme provider so that errors are styled.
+
+    // Core framework
     ErrorPlugin(),
     GraphPlugin(),
     MetadataPlugin(),
     ClientPlugin({ appKey: "schrodie.dxos.network", types }),
 
-    // UX
+    // Core UX
     LayoutPlugin(),
     NavTreePlugin(),
 
-    // Data
     SpacePlugin(),
+    // DebugPlugin(), // need @dxos/devtools to be published to np
+    FilesPlugin(),
     IpfsPlugin(),
     PresenterPlugin(), // Before Stack.
+
+    // Presentation Plugins
     MarkdownPlugin(),
     SketchPlugin(),
     StackPlugin(),

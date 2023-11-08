@@ -8,7 +8,7 @@ package:
         outdir: "out/dxos-templates"
 runtime:
   client:
-    remoteSource: https://halo.dev.dxos.org/vault.html
+    remoteSource: https://halo.dxos.org/vault.html
     log:
       filter: error
     storage:
