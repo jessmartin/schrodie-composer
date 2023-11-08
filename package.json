@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@braneframe/plugin-client": "0.3.5",
-    "@braneframe/plugin-files": "0.3.5",
     "@braneframe/plugin-graph": "0.3.5",
     "@braneframe/plugin-ipfs": "0.3.5",
     "@braneframe/plugin-error": "0.3.5",

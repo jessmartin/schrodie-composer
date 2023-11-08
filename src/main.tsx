@@ -5,7 +5,6 @@ import { createRoot } from "react-dom/client";
 
 import { ClientPlugin } from "@braneframe/plugin-client";
 import { ErrorPlugin } from "@braneframe/plugin-error";
-import { FilesPlugin } from "@braneframe/plugin-files";
 import { GraphPlugin } from "@braneframe/plugin-graph";
 import { IpfsPlugin } from "@braneframe/plugin-ipfs";
 import { LayoutPlugin } from "@braneframe/plugin-layout";
@@ -45,8 +44,7 @@ const App = createApp({
     NavTreePlugin(),
 
     SpacePlugin(),
-    // DebugPlugin(), // need @dxos/devtools to be published to np
-    FilesPlugin(),
+    // DebugPlugin(), // need @dxos/devtools to be published to npm
     IpfsPlugin(),
     PresenterPlugin(), // Before Stack.
 
