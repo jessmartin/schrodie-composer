@@ -28,9 +28,22 @@ export default defineConfig({
           __dirname,
           "./node_modules/@braneframe/plugin-*/dist/lib/**/*.mjs"
         ),
-        resolve(__dirname, './node_modules/@dxos/react-ui-mosaic/dist/lib/**/*.mjs'),
-        resolve(__dirname, './node_modules/@dxos/react-ui-stack/dist/lib/**/*.mjs'),
-        resolve(__dirname, './node_modules/@dxos/react-ui-navtree/dist/lib/**/*.mjs'),
+        resolve(
+          __dirname,
+          "./node_modules/@dxos/react-ui-mosaic/dist/lib/**/*.mjs"
+        ),
+        resolve(
+          __dirname,
+          "./node_modules/@dxos/react-ui-editor/dist/lib/**/*.mjs"
+        ),
+        resolve(
+          __dirname,
+          "./node_modules/@dxos/react-ui-stack/dist/lib/**/*.mjs"
+        ),
+        resolve(
+          __dirname,
+          "./node_modules/@dxos/react-ui-navtree/dist/lib/**/*.mjs"
+        ),
       ],
     }),
   ],
